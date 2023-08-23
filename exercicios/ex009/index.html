@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo html5 200.png" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1" start="3"> <!--Dentro da tag 'ol' podemos colocar a tag 'type', ela nos permitira formatar a descrição da tabela entre: numerico, alfabetico e romano // se quiser que a lista comece pelo numero 4 por exemplo deve ser acresentada a tag 'star', e dentro dela informar o numero 4-->
+        <li>Acordar</li>
+        <li>Escovar os Dentes</li>
+        <li>Dar comida para a Kyra</li>
+        <li>Dar comida para as galinhas</li>
+        <li>Recolher fezes Kyra</li>
+        <li>Arrumar a cama</li>
+        <li>Tomar cafe</li>
+        <li>Estudar</li>
+        
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul> <!--Existem simbolos para apontamento de listas como 'disc', circulo todo pintado / 'circle', circulo sem pintura no meio / 'square', quadrado  -  lembrando que para utiliza-los devera ser colocado a tag 'type', dentro da tag 'ul'-->
+        <li>Pao</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Café</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Juntando Listas versão 1.0</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+
+        <li>Novas</li>
+        <ol type="a" start="5"> <!-- Para a lista ser continua, exemplo a-b-c-d-e-f-g-h, na tabela de baixo foi adicionado a tag 'star' e informado o numeral '5', pois a tag 'start' só reconhece numeros, e não letras-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>SNES</li>
+        <ul>
+            <li>Super Mario Bros</li>
+            <ul type = "square">
+                <li>Super Mario 3</li>
+                <li>Super Mario World</li>
+            </ul>
+            <li>Donkey Kong</li>
+            <ul type="square">
+                <li>DK 2</li>
+                <li>DK 3</li>
+
+            </ul>
+        </ul>
+        <li>XBOX 360</li>
+        <ul>
+            <li>Call Of Duty</li>
+            <li>Forza</li>
+        </ul>
+        <li>PlayStation 4</li>
+        <ul>
+            <li>Fortnite</li>
+            <li>Homem-Aranha</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML <!-- termo -->        </dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.<!-- descrição -->    
+        </dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para acriação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+
+    </dl>
+
+    
+</body>
+</html>
