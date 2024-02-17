@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;   
+            background-color: yellow;         
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(228, 221, 221);
+        }
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        tbody tr:nth-child(1n){
+            background-color: white;
+        }
+        tbody tr:nth-child(2n){
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        Anatomia para Tabelas Grandes
+        TABLE
+            CAPTION - LEGENDA DA TABELA
+            THEAD - CABEÇA DA TABELA
+                TR, TD, TH
+            TBODY - CORPO DA TABELA
+                TR, TD, TH
+            TFOOT - RODAPE DA TABELA
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+                
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524	</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>000000</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
